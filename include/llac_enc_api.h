@@ -8,24 +8,24 @@
 #define LLAC_ENC_API_H
 
 /*
- * LLAC:
+ * LLAC: 
  * API Usage
  *
  * STEP1.   call llac_enc_mem_alloc() once to allocate the memory
  * STEP2_0. call llac_enc_set_extra_func() before llac_enc_initial()
             to enable or disable extra function if needed (for AR, LARC and EXTH ,default is disable)
  * STEP2.   call llac_enc_initial() once to initialize encoder
- * STEP3_0. call llac_enc_set_bitrate() before llac_enc_process()
+ * STEP3_0. call llac_enc_set_bitrate() before llac_enc_process() 
  *          to set new bitrate if needed (for autobitrate usage)
  * STEP3.   call llac_enc_process() in a while loop to encode each frame
- * STEP4.   call llac_enc_mem_free() once to release the allocated memory
- *        when the encode process are done
+ * STEP4.   call llac_enc_mem_free() once to release the allocated memory 
+ *        when the encode process are done 
  */
 
 
 
 /*
- * LLAC:
+ * LLAC: 
  *      LLAC_MAX_CHANNELS:   Max number of channels
  *      LLAC_MAX_SAMPLES:    Max number of samples per channel
  *      LLAC_MAX_BYTES:      Max size of encoded output data in bytess
@@ -70,7 +70,7 @@ bool llac_enc_get_extra_func(unsigned char func_index,
  * llac_enc_initial - do encoder initialization
  * @sampleRate: sample rate of input file
  * @nChannels: channel number of input file
- * @bps_in: bit per sample of input file
+ * @bps_in: bit per sample of input file 
  * @bps_out: bit per sample of output file
  * @frame_ms: frame duration in millisecond
  * @target_bitrate: targeted bitrate

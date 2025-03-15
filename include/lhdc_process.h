@@ -1,7 +1,7 @@
 #ifndef _PROCESS_BLOCK_H_
 #define _PROCESS_BLOCK_H_
 #include <stdbool.h>
-#include <stdint.h>
+
 
 struct FFT_block_s;
 typedef struct FFT_block_s FFT_BLOCK;
